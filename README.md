@@ -1,6 +1,6 @@
 ## Demo Portafolio
 
-Simple portafolio que solo falta poner los end-point para las peticiones al servidor.
+Simple portafolio que solo falta poner las ulr para las peticiones al servidor.
 
 ### creado con:
 
