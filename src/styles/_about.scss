@@ -1,0 +1,31 @@
+.about_container {
+  color: $claro;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: $textNormal;
+  letter-spacing: $lSpacing1;
+  font-weight: lighter;
+
+  p {
+    padding: 20px 0;
+  }
+  ul {
+    list-style: none;
+    font-size: 14px;
+    li {
+      padding: 3px 0;
+    }
+  }
+  h3 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: $lSpacing2;
+  }
+
+  .social_icons {
+    position: initial;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+}

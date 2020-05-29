@@ -1,0 +1,145 @@
+@font-face {
+  font-family: segoe-ui;
+  src: url('../assets/Segoe\ UI.ttf');
+}
+
+//////// sections
+.app_section {
+  width: 100vw;
+  height: 100vh;
+  z-index: $sectionContentZIndex;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+.element_blur_off {
+  filter: blur(30px);
+  transform: translate3d(0, 0, 0);
+  opacity: 0.3 !important;
+}
+
+//////// box-shadow
+$bigNeonShadow: 0 0 10px $primary, 0 0 40px $primary, 0 0 80px $primary;
+$bigNeonShadowSmall: 0 0 5px $primary, 0 0 20px $primary;
+
+//////// text-shadow
+$texts1: 0 0 2px $primary, 0 0 5px $primary;
+$texts2: 0 0 5px $primary, 0 0 10px $primary;
+$textsSmall: 0 0 2px $primary, 0 0 5px $primary;
+$textNormal: 0 0 1px rgba($primary, 0.8), 0 0 6px rgba($primary, 0.8);
+
+// text
+$lSpacing0: 2px;
+$lSpacing1: 4px;
+$lSpacing2: 6px;
+
+// link
+.link_style {
+  display: inline-block;
+  text-decoration: none;
+  text-shadow: $textsSmall;
+  transition: 0.4s;
+  opacity: 0.75;
+  color: $claro;
+  text-shadow: $textNormal;
+  letter-spacing: $lSpacing0;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 40%;
+    background: rgba($primary, 0.8);
+    transition: 0.4s;
+  }
+  &:hover {
+    opacity: 1;
+    &:before {
+      width: 100%;
+    }
+  }
+}
+.link_style_icon {
+  display: inline-block;
+  text-decoration: none;
+  text-shadow: $textsSmall;
+  transition: 0.4s;
+  opacity: 0.75;
+  color: $claro;
+  text-shadow: $textNormal;
+  letter-spacing: $lSpacing0;
+  position: relative;
+  &:after {
+    font-family: FontAwesome;
+    content: '\f08e';
+    font-size: 11px;
+    transition: 0.4s;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 40%;
+    background: rgba($primary, 0.8);
+    transition: 0.4s;
+  }
+  &:hover {
+    opacity: 1;
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+// button
+.btn_neon_effect {
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  color: $primary;
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: $lSpacing1;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.4s;
+  opacity: 0.75;
+}
+.btn_neon_effect:hover {
+  color: $secondary;
+  background: $primary;
+  opacity: 1;
+}
+
+/// contenedores
+.simple_container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 80px 20px;
+  position: relative;
+}
+
+// divider
+.divider {
+  height: 1px;
+  width: 30%;
+  min-width: 100px;
+  background: rgba($secondary, 0.3);
+  margin: 10px auto;
+}
+
+.title_common {
+  color: $claro;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: $lSpacing1;
+  font-size: 20px;
+}

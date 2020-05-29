@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: segoe-ui;
+}
+body {
+  ::-webkit-scrollbar {
+    width: 10px;
+    border-left: 1px solid rgba($secondary, 0.5);
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba($secondary, 1);
+    box-shadow: $bigNeonShadowSmall;
+    transition: 0.3s;
+    //border-radius: 20%;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: lighten($secondary, 5%);
+  }
+}
+
+// https://www.youtube.com/watch?v=rRNLBDGaDy4&list=PLEWI_I5M5Xo62hJodJF2J6NKipFg2jszD&index=17&t=0s

@@ -1,0 +1,79 @@
+.btn_menu {
+  position: fixed;
+  left: 20px;
+  top: 25px;
+  z-index: $menuBtn;
+  cursor: pointer;
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60px;
+  height: 35px;
+  overflow: hidden;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+.btn_menu:hover {
+  opacity: 1;
+}
+.btn_menu .line {
+  background: $primary;
+  height: 1px;
+  width: 30px;
+  display: block;
+  transition: 0.3s;
+  transition-delay: 0.1s;
+  box-shadow: $bigNeonShadowSmall;
+}
+
+.menu_app {
+  display: flex;
+  z-index: $menu;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.menu_app_active {
+  display: flex;
+}
+
+.menu_app .menu_list {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.menu_app .menu_list li {
+  list-style: none;
+  margin: 20px 0;
+  font-size: 20px;
+  text-align: center;
+  transform: skew(0deg);
+  transition: 0.3s;
+}
+.menu_app .menu_list a {
+  text-decoration: none;
+  position: relative;
+  letter-spacing: $lSpacing1;
+  color: $claro;
+  text-transform: uppercase;
+  text-shadow: $textsSmall;
+  opacity: 0.7;
+  transition: 0.3s;
+  display: block;
+  transform: translate3d(0, 0, 0);
+  font-size: 16px;
+  &:hover {
+    opacity: 1;
+  }
+}

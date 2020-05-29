@@ -1,0 +1,18 @@
+.admin_post {
+  padding: 0 0 50px 0;
+}
+.admin_title {
+  font-size: 20px;
+  color: $primary;
+  text-transform: uppercase;
+  letter-spacing: $lSpacing1;
+  text-shadow: $textNormal;
+  text-align: center;
+}
+
+.admin_nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 0;
+}
